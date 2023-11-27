@@ -36,31 +36,8 @@
 
 ### Potential Additions:
 
-1. **PUT `/follower/edit/{toUserId}`**
-   - Description: Allows users to update their followers' list (e.g., edit followers).
-   - Payload: Contains the updated list of follower IDs.
-   - Response: HTTP Status Code indicating success or failure.
-
-2. **GET `/follower/check/{fromUserId}/{toUserId}`**
-   - Description: Checks if a specific user (`fromUserId`) is following another user (`toUserId`).
-   - Parameters:
-     - `fromUserId`: The user who might be following.
-     - `toUserId`: The user who might be followed.
-   - Response: Boolean indicating the follow relationship status.
-
-3. **GET `/follower/mutual/{userId}`**
-   - Description: Retrieves a list of mutual followers between the specified user and other users they are following.
-   - Parameters:
-     - `userId`: The user for whom mutual followers are being retrieved.
-   - Response: List of user previews for mutual followers.
-
-4. **GET `/follower/suggestions/{userId}`**
+1. **GET `/follower/suggestions/{userId}`**
    - Description: Provides suggestions for users to follow based on common interests, connections, or similar profiles.
    - Parameters:
      - `userId`: The user for whom follow suggestions are being provided.
    - Response: List of user previews for potential follow suggestions.
-
-5. **PUT `/following/update/{fromUserId}/{toUserId}`**
-   - Description: Allows users to modify specific following relationships (e.g., update relationship details).
-   - Payload: Contains updated details for the following relationship.
-   - Response: HTTP Status Code indicating success or failure.
